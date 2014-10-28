@@ -15,7 +15,7 @@ crontab -e
 30 2 * * *  /usr/bin/mysqldump -u MYSQLUSER -pYOURPASSWORD YOURDATABASE | gzip > /var/backups/db-backups/`date +\%Y-\%m-\%d`.sql.gz
 ```
 --------------
-Replace the following with the appropiate options:
+Replace the following with the appropriate options:
 - MYSQLUSER - your mysql user (usually root).
 - YOURPASSWORD - your mysql user (root) password.
 - YOURDATABASE - your database name.
